@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+.appTitle{
+  color: rgb(62, 146, 121);
+  font-size: 1.5em;
+  font-weight: bolder;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.guideline{
+  color: red;
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin:0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+font-size: 12px !important;
+color: #455a64;
+  /* font-family: Georgia, 'Times New Roman', Times, serif !important; */
+  font-family:Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+.p-10{
+  padding: 10px !important;
+}
+
+.p-20{
+  padding: 20px !important;
+}
+
+.el-right{
+  border-left: 2px solid #f1f1f1;
+  padding-left: 20px;
+}
+
+.btn-p-5{
+  padding: 5px !important;
+}
+
+.footer-mark{
+  color:#ccc;
+  font-size: 9px;
+}
+
+.inlineform{
+  display: inline-block !important;
+}
+
+.navtab{ 
+  padding: 15px;
+  margin-bottom: 18px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background-color: #fff;
+  border-color: #00bcd4;
+  color: #00bcd4 !important;
+  padding: 5px 10px;
+  font-size: 9px !important;
+
+}
+
+
+
+  .___dataTable____{
+      border: 1px solid #000;
+      font-size: 12px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .___dataTable____ tr, td{
+      border: 1px solid #000;
   }
-  to {
-    transform: rotate(360deg);
+
+  .text-black{
+      color: #000;
   }
+  .text-success{
+      font-weight: bolder !important;
+  }
+
+
+  .text-center{
+    text-align: center;
+  }
+
+  .card {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgb(69 90 100 / 8%);
+    box-shadow: 0 1px 20px 0 rgb(69 90 100 / 8%);
+    border: none;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 20px;
 }
