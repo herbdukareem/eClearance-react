@@ -1,30 +1,56 @@
-import { Container, Grid} from "@mui/material";
+import { 
+    Container,
+    Grid,
+    Stack,
+    Divider,
+    Box,
+    Typography,
+    TextField,
+    Button,
+    } from "@mui/material";
 import {Header} from "./Header";
+import Guidelines from "./components/Guidelines";
+import LogoutOutlined from "@mui/icons-material/LoginOutlined";
 export const Home = () => {
     return (
-        <div class="login-block" >
+        
             <Container maxWidth="lg">
-                <Header/>  
-                    <Grid container  spacing={2} className="card"  data-aos="zoom-in">
-                        <Grid item xs={6}>
-                              <div>
-                                    <h4>Welcome to 2021/2022 eClearance </h4>
-                                    <h6 class="guideline" >Instruction:</h6>
-                                    <ol>
-                                        <li>Applicant should check Eligibility before proceeding to payment</li>
-                                        <li> Clearance requirement includes scan copies of your credentials: - O'level sittings, Primary Cerificate, Indigene or Birth Certificate.</li>
-                                        <li>Payment are accepted only through your Debt Card (Verve, Master, VISA Card) or Online Bank payment.</li>
-                                    </ol>
-                                        
-                                        For More Information, Please Contact: 08130051228
-                                </div>
+                <Box class="login-block" >
+                     <Header/> 
+                    <Stack  p={2} my={2} >
+                     
+                        <Grid container  spacing={2} className="card"  data-aos="zoom-in" divider={<Divider orientation="horizontal" flexItem />}>
+                            <Grid item xs={12} sm={8}>
+                                <Guidelines/>
+                            </Grid>
+                            <Grid item xs={12} sm={4}>
+                                  <Typography vairant='h4' sx={{fontWeight: 'bolder'}}>Check Eligibility: </Typography>
+                                    <Box>
+                                        <TextField label='Enter Matric Number' variant='standard' fullWidth sx={{ m: 1 }} />
+                                    </Box>
+                                    <Box className="text-right">
+                                        <Button variant='contained'  size="small" color="success" sizeSmall={true} sx={{
+                                           textTransform: 'capitalize'
+                                          
+                                        }}
+                                        endIcon={<LogoutOutlined/>}
+                                        >Check Eligibility</Button>
+                                    </Box>
+                                   
+                                        <br/>
+                                        Already have a profile ? <br/> Click on <b><i>"Clearance Status/Profile"</i> </b> button below to check your clearance status <br/><br/>
+                                    <Box className="text-right">
+                                         <Button href='./login' variant='contained' size="small"  sizeSmall={true} sx={{
+                                           textTransform: 'capitalize'
+                                        }} color='error' endIcon={<LogoutOutlined/>}>Clearance Status/Profile  </Button>
+                                    
+                                    </Box>
+                            </Grid>
                         </Grid>
-                        <Grid item xs={6}>
-                            
-                        </Grid>
-                    </Grid>
+                    </Stack>
+                </Box>
             </Container>
             
-    </div>
+    
     );
 };

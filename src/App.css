@@ -1,3 +1,9 @@
+body {
+  font-size: 12px !important;
+  color: #455a64;
+  /* font-family: Georgia, 'Times New Roman', Times, serif !important; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
 .appTitle{
   color: rgb(62, 146, 121);
   font-size: 1.5em;
@@ -79,6 +85,11 @@ color: #455a64;
   .text-center{
     text-align: center;
   }
+
+  .text-right{
+    text-align: right;
+  }
+
 
   .card {
     border-radius: 5px;

@@ -4,7 +4,7 @@ export const Header = () => {
     return (
         <div>
              <p className="text-center">
-                <img src={logo} alt="" width="35%" />
+                <img src={logo} alt="" width="350px" />
                     <br/><u class="appTitle">e-Clearance</u><Divider />
             </p> 
         </div>
